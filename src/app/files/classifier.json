@@ -1,0 +1,598 @@
+{
+    "Existing_entities": [
+        {
+            "No": "1",
+            "Entity": "ABA Routing Number",
+            "entity group": "Finance",
+            "regex": "[012367]\\d{3}-\\d{4}-\\d"
+        },
+        {
+            "No": "2",
+            "Entity": "Canada Bank Account Number",
+            "entity group": "Finance",
+            "regex": "\\d{5}\\-(\\d{3}|[0]{1})\\d{8}"
+        },
+        {
+            "No": "3",
+            "Entity": "Credit Card Number",
+            "entity group": "Finance",
+            "regex": "3[47]\\d{1,2}(| |-)\\d{6}\\1\\\\d{6}      [\"CREDIT_CARD_AMERICAN_EXPRESS\"]\r\n\r\n65[4-9][0-9]{13}|64[4-9][0-9]{13}|6011[0-9]{12}|(622(?:12[6-9]|1[3-9][0-9]|[2-8][0-9][0-9]|9[01][0-9]|92[0-5])[0-9]{10})          \r\n[CREDIT_CARD_DISCOVER]\r\n\r\n5[1-5][0-9]{14} \r\n[MASTER_CARD]\r\n\r\n4[0-9]{12}(?:[0-9]{3})?\r\n[VISA_CARD]\r\n\r\n3[47][0-9]{13}\r\n[AMEX_CARD]\r\n\r\n(5018|5020|5038|6304|6759|6761|6763)[0-9]{8,15}\r\n[MAESTRO_CARD]"
+        },
+        {
+            "No": "4",
+            "Entity": "EU Debit Card Number",
+            "entity group": "Finance",
+            "regex":""
+        },
+        {
+            "No": "5",
+            "Entity": "India Permanent Account Number",
+            "entity group": "Finance",
+            "regex": "([a-zA-Z]){5}([0-9]){4}([a-zA-Z]){1}?"
+        },
+        {
+            "No": "6",
+            "Entity": "International Banking Account Number (IBAN)",
+            "entity group": "Finance",
+            "regex": "[a-zA-Z]{2}\\d{2}\\s?[a-zA-Z0-9]{4}\\s?([a-zA-Z0-9]{4})?\\s?([a-zA-Z0-9]{4})?\\s?([a-zA-Z0-9]{4})?\\s?([a-zA-Z0-9]{4})?\\s?([a-zA-Z0-9]{4})?\\s?([a-zA-Z0-9]{4})?\\s?[a-zA-Z0-9]{1}([a-zA-Z0-9]{1})?([a-zA-Z0-9]{1})?"
+        },
+        {
+            "No": "7",
+            "Entity": "Israel Bank Account Number",
+            "entity group": "Finance",
+            "regex": "\\d{2}-\\d{3}-\\d{8}"
+        },
+        {
+            "No": "8",
+            "Entity": "SWIFT Code",
+            "entity group": "Finance",
+            "regex": "[a-zA-Z]{4}\\s?[a-zA-Z0-9]{3,28}\\s?[a-zA-Z0-9]{0,3}"
+        },
+        {
+            "No": "9",
+            "Entity": "U.S. Bank Account Number",
+            "entity group": "Finance",
+            "regex": "\\d{6,17}"
+        },
+        {
+            "No": "10",
+            "Entity": "Canada Health Service Number",
+            "entity group": "Health",
+            "regex": "\\d{10}"
+        },
+        {
+            "No": "11",
+            "Entity": "Canada Personal Health Identification Number (PHIN)",
+            "entity group": "Health",
+            "regex": "\\d{9}"
+        },
+        {
+            "No": "12",
+            "Entity": "Drug Enforcement Agency (DEA) Number",
+            "entity group": "Health",
+            "regex":""
+        },
+        {
+            "No": "13",
+            "Entity": "U.K. National Health Service Number",
+            "entity group": "Health",
+            "regex": "\\d{3}|\\d{10}\\s\\d{3}\\s\\d{4}"
+        },
+        {
+            "No": "14",
+            "Entity": "Belgium National Number",
+            "entity group": "Personal",
+            "regex": "[0-9]{2}[.\\- ]{0,1}[0-9]{2}[.\\- ]{0,1}[0-9]{2}[.\\- ]{0,1}[0-9]{3}[.\\- ]{0,1}[0-9]{2}"
+        },
+        {
+            "No": "15",
+            "Entity": "Canada Driver's License Number",
+            "entity group": "Personal",
+            "regex": "\\[A-Z]{1}\\d{4}\\s?-?\\d{5}-\\d{5}"
+        },
+        {
+            "No": "16",
+            "Entity": "Canada Passport Number",
+            "entity group": "Personal",
+            "regex": "\\[A-Z]{2}[\\d]{6}"
+        },
+        {
+            "No": "17",
+            "Entity": "Canada Social Insurance Number",
+            "entity group": "Personal",
+            "regex": "\\d{3}\\s?-?\\d{3}\\s?-?\\d{3}"
+        },
+        {
+            "No": "18",
+            "Entity": "Croatia Identity Card Number",
+            "entity group": "Personal",
+            "regex": "\\d{9}"
+        },
+        {
+            "No": "19",
+            "Entity": "Croatia Personal Identification (OIB) Number",
+            "entity group": "Personal",
+            "regex": "\\d{10}\\d"
+        },
+        {
+            "No": "20",
+            "Entity": "Czech National Identity Card Number",
+            "entity group": "Personal",
+            "regex": "[A-Z]{2}[0-9]{6}\r\n\\d{6}\\/\\d{4}"
+        },
+        {
+            "No": "21",
+            "Entity": "Denmark Personal Identification Number",
+            "entity group": "Personal",
+            "regex": "(?:HR)?(?!00)[0-31]{2}(?!00)[0-12]{2}[0-99]{2}[0-9]{4}"
+        },
+        {
+            "No": "22",
+            "Entity": "Finland National ID",
+            "entity group": "Personal",
+            "regex": "(?!00)[0-31]{2}(?!00)[0-12]{2}[0-99]{2}\\-[0-9]{4}"
+        },
+        {
+            "No": "23",
+            "Entity": "Finland Passport Number",
+            "entity group": "Personal",
+            "regex": "[a-zA-z]{2}\\d{7}"
+        },
+        {
+            "No": "24",
+            "Entity": "France Driver's License Number",
+            "entity group": "Personal",
+            "regex": "\\d{12}"
+        },
+        {
+            "No": "25",
+            "Entity": "France National ID Card (CNI)",
+            "entity group": "Personal",
+            "regex": "(?!00)[0-31]{2}(?!00)[0-12]{2}[0-99]{2}[-+Aa][0-9]{3}[A-Za-z0-9]{1}"
+        },
+        {
+            "No": "26",
+            "Entity": "France Passport Number",
+            "entity group": "Personal",
+            "regex": "\\d{2}[a-zA-Z]{2}\\d{5}"
+        },
+        {
+            "No": "27",
+            "Entity": "France Social Security Number (INSEE)",
+            "entity group": "Personal",
+            "regex": "P 1: \\d{13} d{2}    p 2:\\d{15}"
+        },
+        {
+            "No": "28",
+            "Entity": "German Driver's License Number",
+            "entity group": "Personal",
+            "regex": "[A-ZÄÖÜ]{1,3}\\-[ ]{0,1}[A-Z]{0,2}[0-9]{1,4}[H]{0,1}"
+        },
+        {
+            "No": "29",
+            "Entity": "German Identity Card Number",
+            "entity group": "Personal",
+            "regex": "old: \\d{10}    new: [a-zA-Z]\\d{8}"
+        },
+        {
+            "No": "30",
+            "Entity": "German Passport Number",
+            "entity group": "Personal",
+            "regex":""
+        },
+        {
+            "No": "31",
+            "Entity": "Greece National ID Card",
+            "entity group": "Personal",
+            "regex": "[α-ωΑ-Ω]{1}\\-\\d{6}     [Old_format]\r\n[α-ωΑ-Ωa-zA-Z]{2}\\-\\d{6}   [New Format]"
+        },
+        {
+            "No": "32",
+            "Entity": "India Unique Identification (Aadhaar) Number",
+            "entity group": "Personal",
+            "regex": "[2-9]{1}\\d{3}\\s?\\-?\\d{4}\\s?\\-?\\d{4}"
+        },
+        {
+            "No": "33",
+            "Entity": "Ireland Personal Public Service (PPS) Number",
+            "entity group": "Personal",
+            "regex": "  \\d{7}[a-zA-Z]{1}([a-zA-Z]{1})?   [Old Format]\r\n\r\n   \\d{7}[a-zA-Z]{1}[aAhH]{1}          [New Format]"
+        },
+        {
+            "No": "34",
+            "Entity": "Italy Driver's License Number",
+            "entity group": "Personal",
+            "regex": "[a-zA-Z][AaVv]\\d{7}[a-zA-Z]"
+        },
+        {
+            "No": "35",
+            "Entity": "Netherlands Citizen's Service (BSN) Number",
+            "entity group": "Personal",
+            "regex": "\\d{3}\\s?\\d{3}\\s?\\d{2}(\\d{1})?"
+        },
+        {
+            "No": "36",
+            "Entity": "Norway Identification Number",
+            "entity group": "Personal",
+            "regex": "(?!00)[0-31]{2}(?!00)[0-12]{2}[0-99]{2}\\s?\\d{5}"
+        },
+        {
+            "No": "37",
+            "Entity": "Poland Identity Card",
+            "entity group": "Personal",
+            "regex": "[a-zA-Z]{3}\\d{6}"
+        },
+        {
+            "No": "38",
+            "Entity": "Poland National ID (PESEL)",
+            "entity group": "Personal",
+            "regex": "[0-9]{4}[0-3]{1}[0-9]{1}[0-9]{5}"
+        },
+        {
+            "No": "39",
+            "Entity": "Poland Passport",
+            "entity group": "Personal",
+            "regex": "[a-zA-Z]{2}\\d{7}"
+        },
+        {
+            "No": "40",
+            "Entity": "Portugal Citizen Card Number",
+            "entity group": "Personal",
+            "regex": "\\d{8}"
+        },
+        {
+            "No": "41",
+            "Entity": "Spain Social Security Number (SSN)",
+            "entity group": "Personal",
+            "regex": "\\d{2}/?\\d{7,8}/?\\d{2}"
+        },
+        {
+            "No": "42",
+            "Entity": "Sweden National ID",
+            "entity group": "Personal",
+            "regex": "(\\d{2,4})?[0-99]{2}(?!00)[0-12]{2}(?!00)[0-31]{2}([-+]{1})?\\d{4}"
+        },
+        {
+            "No": "43",
+            "Entity": "Sweden Passport Number",
+            "entity group": "Personal",
+            "regex": "\\d{8}"
+        },
+        {
+            "No": "44",
+            "Entity": "U.K. Driver's License Number",
+            "entity group": "Personal",
+            "regex": "([a-zA-Z]{1}|[9]{1})([a-zA-Z]{1}|[9]{1})([a-zA-Z]{1}|[9]{1})([a-zA-Z]{1}|[9]{1})([a-zA-Z]{1}|[9]{1})\\d{1}(?!00)[0-31]{2}(?!00)[0-12]{2}[0-9]{1}([a-zA-Z]{1}|[9]{1})([a-zA-Z]{1}|[9]{1})\\d{5}"
+        },
+        {
+            "No": "45",
+            "Entity": "U.K. Electoral Roll Number",
+            "entity group": "Personal",
+            "regex": "[a-zA-Z]{2}\\d{1-4}"
+        },
+        {
+            "No": "46",
+            "Entity": "U.K. National Insurance Number (NINO)",
+            "entity group": "Personal",
+            "regex": "[ACEHJLMOPRSW-Yacehjlmoprsw-y][A-CEGHJ-NPRSTW-Za-ceghj-nprstw-z]|[Bb][A-CEHJ-NPRSTW-Za-cehj-nprstw-z]|[Gg][ACEGHJ-NPRSTW-Zaceghj-nprstw-z]|[Kk][A-CEGHJ-MPRSTW-Za-ceghj-mprstw-z]|[Nn][A-CEGHJLMNPRSW-Za-ceghjlmnprsw-z]|[Tt][A-CEGHJ-MPRSTW-Za-ceghj-mprstw-z]|[Zz][A-CEGHJ-NPRSTW-Ya-ceghj-nprstw-y][0-9]{6}[A-Da-d ]?"
+        },
+        {
+            "No": "47",
+            "Entity": "U.S. / U.K. Passport Number",
+            "entity group": "Personal",
+            "regex": "\\d{9}"
+        },
+        {
+            "No": "48",
+            "Entity": "U.S. Driver's License Number",
+            "entity group": "Personal",
+            "regex":""
+        },
+        {
+            "No": "49",
+            "Entity": "U.S. Individual Taxpayer Identification Number (ITIN)",
+            "entity group": "Personal",
+            "regex": "(9\\d{2})([-]?)([7]\\d|8[0-8])([-]?)(\\d{4})"
+        },
+        {
+            "No": "50",
+            "Entity": "U.S. Social Security Number (SSN)",
+            "entity group": "Personal",
+            "regex": "(?!000|666)[0-8][0-9]{2}-(?!00)[0-9]{2}-(?!0000)[0-9]{4}"
+        },
+        {
+            "No": "51",
+            "Entity": "Phone number formats of US, India and Europe",
+            "entity group": "Personal",
+            "regex": "\\d{10}|\\+\\d{12}|\\+\\d{13}|\\+?(\\d{1}?|\\d{2}|\\d{3})\\s?(\\d{2,3})?\\(?(\\d{2,3})\\)?[- ]?(\\d{3})[- ]?(\\d{4})"
+        },
+        {
+            "No": "52",
+            "Entity": "Email",
+            "entity group": "Personal",
+            "regex": "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}"
+        },
+        {
+            "No": "53",
+            "Entity": "Names of major cities in US, Europe and India",
+            "entity group": "Personal",
+            "regex":""
+        },
+        {
+            "No": "54",
+            "Entity": "Country",
+            "entity group": "Personal",
+            "regex": ""
+        },
+        {
+            "No": "55",
+            "Entity": "Postal code formats of US, Europe and India",
+            "entity group": "Personal",
+            "regex": "(?:GIR 0AA|(?:(?:(?:A[BL]|B[ABDHLNRSTX]?|C[ABFHMORTVW]|D[ADEGHLNTY]|E[HNX]?|F[KY]|G[LUY]?|H[ADGPRSUX]|I[GMPV]|JE|K[ATWY]|L[ADELNSU]?|M[EKL]?|N[EGNPRW]?|O[LX]|P[AEHLOR]|R[GHM]|S[AEGK-PRSTY]?|T[ADFNQRSW]|UB|W[ADFNRSV]|YO|ZE)[1-9]?\\d|(?:(?:E|N|NW|SE|SW|W)1|EC[1-4]|WC[12])[A-HJKMNPR-Y]|(?:SW|W)(?:[2-9]|[1-9]\\d)|EC[1-9]\\d)\\d[ABD-HJLNP-UW-Z]{2}))\r\n\r\nUK_POSTAL_CODE\r\n\r\n\\d{5}(?:-\\d{4})?\r\nUSA_POSTAL_CODE\r\n\r\n([0-9]{6}|[0-9]{3}\\s[0-9]{3})\r\nINDIA_POSTAL_CODE"
+        },
+        {
+            "No": "56",
+            "Entity": "session ID",
+            "entity group": "Authentication",      
+            "regex": "\\d{3}-\\d{7}-\\d{7}"
+        },
+        {
+            "No": "57",
+            "Entity": "Token ID",
+            "entity group": "Authentication",
+            "regex":""
+        },
+        {
+            "No": "58",
+            "Entity": "jSession",
+            "entity group": "Authentication",
+            "regex":""
+        },
+        {
+            "No": "59",
+            "Entity": "ip address",
+            "entity group": "User Tracking",            
+            "regex": "(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])"
+        },
+        {
+            "No": "60",
+            "Entity": "mac address",
+            "entity group": "User Tracking",           
+            "regex": "([0-9a-fA-F][0-9a-fA-F](:|-|\\s)){5}([0-9a-fA-F][0-9a-fA-F])"
+        },
+        {
+            "No": "61",
+            "Entity": "Argentina national identity (DNI) number\r\nFormat",
+            "Category": "Personal",
+            "regex": "\\d{2}[.]?\\d{3}[.]?\\d{3}"
+        },
+        {
+            "No": "62",
+            "Entity": "Australia bank account number",
+            "Category": "Finance",
+            "regex": "\\d{3}-\\d{3}"
+        },
+        {
+            "No": "63",
+            "Entity": "Australia driver's license number",
+            "Category": "Personal",
+            "regex": "(([a-zA-Z]{2}|\\d{2})\\d{2}([a-zA-Z]{5}|\\d{5}))|(([a-zA-Z]{1,2})\\d{4,9})|(([a-zA-Z]{9})|(\\d{9}))"
+        },
+        {
+            "No": "64",
+            "Entity": "Australian medicare number",
+            "Category": "Health",
+            "regex": "[2-6]{1}\\d{9}(\\d{1})?"
+        },
+        {
+            "No": "65",
+            "Entity": "Australia passport number",
+            "Category": "Personal",
+            "regex": "[A-Za-z]{1}[0-9]{7}"
+        },
+        {
+            "No": "66",
+            "Entity": "Australia tax file number",
+            "Category": "Finance",
+            "regex": "\\d{3}\\s?\\d{3}\\s?\\d{2,3}"
+        },
+        {
+            "No": "67",
+            "Entity": "Brazil CPF number",
+            "Category": "Personal",
+            "regex": "\\d{3}[.]{1}\\d{3}[.]{1}\\d{3}[-]{1}\\d{2}"
+        },
+        {
+            "No": "68",
+            "Entity": "Brazil legal entity number (CNPJ)",
+            "Category": "Personal",
+            "regex": "\\d{2}[.]\\d{3}[.]\\d{3}[/]{1}\\d{4}[-]{1}\\d{2}"
+        },
+        {
+            "No": "69",
+            "Entity": "Brazil national identification card (RG)",
+            "Category": "Personal",
+            "regex": "(\\d{2}[.]\\d3}[.]\\d{3}[-]\\d{1})|(\\d{10}[-]\\d{1})"
+        },
+        {
+            "No": "70",
+            "Entity": "Chile identity card number",
+            "Category": "Personal",
+            "regex": "\\d{1,2}[.]?\\d{3}[.]?d{3}[-](\\d{1}|[a-zA-Z]{1})"
+        },
+        {
+            "No": "71",
+            "Entity": "China-resident identity card (PRC) number",
+            "Category": "Personal",
+            "regex": "\\d{6}\\d{4}(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])\\d{3}\\d{1}"
+        },
+        {
+            "No": "72",
+            "Entity": "Croatia driver's license number",
+            "Category": "Personal",
+            "regex": "\\d{8}"
+        },
+        {
+            "No": "73",
+            "Entity": "EU driver's license number",
+            "Category": "Personal",
+            "regex": "Austria\r\nBelgium\r\nBulgaria\r\nCroatia\r\nCyprus\r\nCzech\r\nDenmark\r\nEstonia\r\nFinland\r\nFrance\r\nGermany\r\nGreece\r\nHungary\r\nIreland\r\nItaly\r\nLatvia\r\nLithuania\r\nLuxemburg\r\nMalta\r\nNetherlands\r\nPoland\r\nPortugal\r\nRomania\r\nSlovakia\r\nSlovenia\r\nSpain\r\nSweden\r\nU.K."
+        },
+        {
+            "No": "74",
+            "Entity": "EU national identification number",
+            "Category": "Personal",
+            "regex": "Austria\r\nBelgium\r\nBulgaria\r\nCroatia\r\nCyprus\r\nCzech\r\nDenmark\r\nEstonia\r\nFinland\r\nFrance\r\nGermany\r\nGreece\r\nHungary\r\nIreland\r\nItaly\r\nLatvia\r\nLithuania\r\nLuxemburg\r\nMalta\r\nNetherlands\r\nPoland\r\nPortugal\r\nRomania\r\nSlovakia\r\nSlovenia\r\nSpain\r\nU.K."
+        },
+        {
+            "No": "75",
+            "Entity": "EU passport number",
+            "Category": "Personal",
+            "regex": "Austria\r\nBelgium\r\nBulgaria\r\nCroatia\r\nCyprus\r\nCzech\r\nDenmark\r\nEstonia\r\nFinland\r\nFrance\r\nGermany\r\nGreece\r\nHungary\r\nIreland\r\nItaly\r\nLatvia\r\nLithuania\r\nLuxemburg\r\nMalta\r\nNetherlands\r\nPoland\r\nPortugal\r\nRomania\r\nSlovakia\r\nSlovenia\r\nSpain\r\nSweden\r\nU.K."
+        },
+        {
+            "No": "76",
+            "Entity": "EU social security number or equivalent identification",
+            "Category": "Personal",
+            "regex": "Austria\r\nBelgium\r\nCroatia\r\nCzech\r\nDenmark\r\nFinland\r\nFrance\r\nGermany\r\nGreece\r\nHungary\r\nPortugal\r\nSpain\r\nSweden"
+        },
+        {
+            "No": "77",
+            "Entity": "EU Tax identification number",
+            "Category": "Finance",
+            "regex": "Austria\r\nBelgium\r\nBulgaria\r\nCroatia\r\nCyprus\r\nCzech\r\nDenmark\r\nEstonia\r\nFinland\r\nFrance\r\nGermany\r\nGreece\r\nHungary\r\nIreland\r\nItaly\r\nLatvia\r\nLithuania\r\nLuxemburg\r\nMalta\r\nNetherlands\r\nPoland\r\nPortugal\r\nRomania\r\nSlovakia\r\nSlovenia\r\nSpain\r\nSweden\r\nU.K."
+        },
+        {
+            "No": "78",
+            "Entity": "Hong Kong identity card (HKID) number",
+            "Category": "Personal",
+            "regex": "[a-zA-Z]{1,2}\\d{6}[{]?((A)|\\d{1})[}]?"
+        },
+        {
+            "No": "79",
+            "Entity": "Indonesia identity card (KTP) number",
+            "Category": "Personal",
+            "regex": "\\d{2}[.]?\\d{2}\\d{2}[.]?\\d{6}[.]?\\d{4}"
+        },
+        {
+            "No": "80",
+            "Entity": "Israel national identification number",
+            "Category": "Personal",
+            "regex": "\\d{9}"
+        },
+        {
+            "No": "81",
+            "Entity": "Japan bank account number",
+            "Category": "Finance",
+            "regex": "\\d{4}[-]?\\s?\\d{3}"
+        },
+        {
+            "No": "82",
+            "Entity": "Japan driver's license number",
+            "Category": "Personal",
+            "regex": "\\d{12}"
+        },
+        {
+            "No": "83",
+            "Entity": "Japan passport number",
+            "Category": "Personal",
+            "regex": "[a-zA-Z]{2}\\d{7}"
+        },
+        {
+            "No": "84",
+            "Entity": "Japan residence card number",
+            "Category": "Personal",
+            "regex": "[a-zA-Z]{2}\\d{8}[a-zA-Z]{2}"
+        },
+        {
+            "No": "85",
+            "Entity": "Japan social insurance number (SIN)",
+            "Category": "Personal",
+            "regex": "\\d{4}[-]?(\\d{6}|\\d{7}|\\d{12})"
+        },
+        {
+            "No": "86",
+            "Entity": "Malaysia identification card number",
+            "Category": "Personal",
+            "regex": "([0-9][0-9](0[1-9]|1[0-2])(0[1-9]|[12]\\d|3[01]))[-]?[a-zA-Z]{2}[-]?\\d{3}\\d{1}"
+        },
+        {
+            "No": "87",
+            "Entity": "New Zealand ministry of health number",
+            "Category": "Health",
+            "regex": "(?:(?![I,O])[a-zA-Z]){3}\\s?\\d{4}"
+        },
+        {
+            "No": "88",
+            "Entity": "Philippines unified multi-purpose identification number",
+            "Category": "Personal",
+            "regex": "\\d{4}-\\d{7}-\\d "
+        },
+        {
+            "No": "89",
+            "Entity": "Portugal driver's license number",
+            "Category": "Personal",
+            "regex": "Pattern 1: [a-zA-Z]{2}-\\d{5,6} \\d     Pattern 2: [a-zA-Z]{2}-\\d{6,8} \\d"
+        },
+        {
+            "No": "90",
+            "Entity": "Saudi Arabia National ID",
+            "Category": "Personal",
+            "regex": "\\d{10}"
+        },
+        {
+            "No": "91",
+            "Entity": "Singapore national registration identity card (NRIC) number",
+            "Category": "Personal",
+            "regex": "[FfGgSsTt]\\d{7}[a-zA-Z]"
+        },
+        {
+            "No": "92",
+            "Entity": "South Africa identification number",
+            "Category": "Personal",
+            "regex": "([0-9][0-9](0[1-9]|1[0-2])(0[1-9]|[12]\\d|3[01]))\\d{4}\\d[8,9]\\d"
+        },
+        {
+            "No": "93",
+            "Entity": "South Korea resident registration number",
+            "Category": "Personal",
+            "regex": "([0-9][0-9](0[1-9]|1[0-2])(0[1-9]|[12]\\d|3[01]))-\\d\\d{4}\\d\\d"
+        },
+        {
+            "No": "94",
+            "Entity": "Taiwan national identification number",
+            "Category": "Personal",
+            "regex": "[a-zA-Z]\\d[1,2]\\d{8}"
+        },
+        {
+            "No": "95",
+            "Entity": "Taiwan passport number",
+            "Category": "Personal",
+            "regex": "[3]\\d{8}"
+        },
+        {
+            "No": "96",
+            "Entity": "Taiwan-resident certificate (ARC/TARC) number",
+            "Category": "Personal",
+            "regex": "[a-zA-Z]{2}\\d{8}"
+        },
+        {
+            "No": "97",
+            "Entity": "latitude longitude",
+            "Category": "Personal",
+            "regex": "^(\\-?([0-8]?[0-9](\\.\\d+)?|90(.[0]+)?)\\s?[,]\\s?)+(\\-?([1]?[0-7]?[0-9](\\.\\d+)?|180((.[0]+)?)))$"
+        },
+        {
+            "No": "98",
+            "Entity": "latitude",
+            "Category": "Personal",
+            "regex": "(\\+|-)?(?:90(?:(?:\\.0{1,6})?)|(?:[0-9]|[1-8][0-9])(?:(?:\\.[0-9]{1,6})?))"
+        },
+        {
+            "No": "99",
+            "Entity": "longitude",
+            "Category": "Personal",
+            "regex": "-?(([-+]?)([\\d]{1-3})((\\.)(\\d+))?)"
+        }
+    ]
+}
